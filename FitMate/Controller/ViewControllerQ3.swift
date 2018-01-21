@@ -19,10 +19,12 @@ class ViewControllerQ3: UIViewController,UITextFieldDelegate {
         if Morning.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Morning.backgroundColor = UIColor.green
             // add to array
+            newUser.setTimeAvailable(answer: "Morning")
         }
         else{
             Morning.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeTimeAvailable(answer: "Morning")
         }
         
     }
@@ -31,10 +33,12 @@ class ViewControllerQ3: UIViewController,UITextFieldDelegate {
         if Afternoon.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Afternoon.backgroundColor = UIColor.green
             // add to array
+            newUser.setTimeAvailable(answer: "Afternoon")
         }
         else{
             Afternoon.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeTimeAvailable(answer: "Afternoon")
         }
     }
     
@@ -42,10 +46,12 @@ class ViewControllerQ3: UIViewController,UITextFieldDelegate {
         if Evening.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Evening.backgroundColor = UIColor.green
             // add to array
+            newUser.setTimeAvailable(answer: "Evening")
         }
         else{
             Evening.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeTimeAvailable(answer: "Evening")
         }
     }
     
@@ -53,21 +59,22 @@ class ViewControllerQ3: UIViewController,UITextFieldDelegate {
         if Night.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Night.backgroundColor = UIColor.green
             // add to array
+            newUser.setTimeAvailable(answer: "Night")
         }
         else{
             Night.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeTimeAvailable(answer: "Night")
         }
     }
     
     var newUser = userData()
     
-    @IBOutlet weak var timeOfDay: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         newUser.printAll()
-        timeOfDay.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -76,15 +83,12 @@ class ViewControllerQ3: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // Hide the keyboard.
-        textField.resignFirstResponder()
-        return true
-    }
+
     
     
     @IBAction func nextScreen(_ sender: UIButton) {
-        newUser.setTimeAvailable(answer: timeOfDay.text!)
+        newUser.combineTimeAvailable()
+        newUser.printTimes()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

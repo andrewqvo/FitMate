@@ -28,10 +28,12 @@ class userData{
     var description = ""
     var weight = 0
     var favoriteExcercise = Set<String>()
-    var daysAvailable = ""
-    var timeAvailable = ""
+    var daysAvailable = Set<String>()
+    var timeAvailable = Set<String>()
     
     var favoriteExerciseAsString = ""
+    var daysAvailableAsString = ""
+    var timeAvailableAsString = ""
     
     init(){
         
@@ -73,10 +75,38 @@ class userData{
          weight = answer
     }
     func setDaysAvailable(answer : String){
-        daysAvailable = answer
+        daysAvailable.insert(answer)
+    }
+    func removeFromDays(answer: String){
+        if(daysAvailable.contains(answer))
+        {
+            daysAvailable.remove(answer)
+        }
+    }
+    
+    func combineDays()
+    {
+        for i in daysAvailable{
+            daysAvailableAsString += i + ""
+        }
     }
     func setTimeAvailable(answer : String){
-        timeAvailable = answer
+        timeAvailable.insert(answer)
+    }
+    
+    func removeTimeAvailable(answer: String)
+    {
+        if(timeAvailable.contains(answer))
+        {
+            timeAvailable.remove(answer)
+        }
+    }
+    
+    func combineTimeAvailable(){
+        for i in timeAvailable{
+            timeAvailableAsString += i + " "
+        }
+        
     }
     func setExcercise(answer : String){
         favoriteExcercise.insert(answer)
@@ -114,6 +144,18 @@ class userData{
             print("user favorite excercise: ", i)
         }
     }
+    func printDays()
+    {
+        for i in daysAvailable{
+            print("users days: ", i)
+        }
+    }
+    func printTimes()
+    {
+        for i in timeAvailable{
+            print("users times: ", i)
+        }
+    }
     
     
     func printAll()
@@ -132,7 +174,12 @@ class userData{
         }
         
         
-        print("days user is available: ", daysAvailable)
-        print("time user is avaliable: " ,timeAvailable)
+        for i in daysAvailable{
+            print("user days available: ", i)
+        }
+        
+        for i in timeAvailable{
+            print("user time available: ", i)
+        }
 }
 }

@@ -647,13 +647,6 @@
                                     <segue destination="ywH-97-XNi" kind="push" id="8mR-CP-AaJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ie: Monday, Tuesday, Thursday" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-n8-eT9">
-                                <rect key="frame" x="39" y="176" width="320" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcL-X9-fsc">
                                 <rect key="frame" x="201" y="236" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -758,7 +751,6 @@
                         <outlet property="Thursday" destination="jcL-X9-fsc" id="KEL-jU-Yyb"/>
                         <outlet property="Tuesday" destination="KiI-8P-Rcu" id="i3e-Mb-ljZ"/>
                         <outlet property="Wednesday" destination="d8b-yF-Kwm" id="zd9-xx-pQu"/>
-                        <outlet property="avalibilityInput" destination="GiA-n8-eT9" id="VjC-fF-sat"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNN-bK-T15" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -793,13 +785,6 @@
                                     <segue destination="XjC-0k-aKb" kind="push" id="M18-rn-Ve3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Morning, Afternoon, Evening, Night" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Dd-vm-qgw">
-                                <rect key="frame" x="39" y="176" width="320" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdt-u0-IlU">
                                 <rect key="frame" x="39" y="242" width="150" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -858,7 +843,6 @@
                         <outlet property="Evening" destination="5Ue-1Z-T51" id="n2P-eg-Ztc"/>
                         <outlet property="Morning" destination="Bdt-u0-IlU" id="m6n-tM-jTo"/>
                         <outlet property="Night" destination="J5p-QV-4Tw" id="h6t-0G-6sZ"/>
-                        <outlet property="timeOfDay" destination="3Dd-vm-qgw" id="7ds-Jl-tjO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKk-AA-tk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
