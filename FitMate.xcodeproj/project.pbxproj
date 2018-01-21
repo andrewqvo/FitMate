@@ -22,6 +22,9 @@
 		2AF71F782014C2C6009C15EC /* ViewControllerQ5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF71F772014C2C6009C15EC /* ViewControllerQ5.swift */; };
 		33D32441377DB7C4C34E98CB /* Pods_FitMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773EC027DE86B7B329FED420 /* Pods_FitMate.framework */; };
 		7C17F6922014DDF200C17BA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C17F6912014DDF100C17BA5 /* GoogleService-Info.plist */; };
+		7C17F6942014E71900C17BA5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17F6932014E71900C17BA5 /* Message.swift */; };
+		7C17F6972014E82A00C17BA5 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C17F6962014E82A00C17BA5 /* MessageCell.xib */; };
+		7C17F6992014E83800C17BA5 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17F6982014E83800C17BA5 /* CustomMessageCell.swift */; };
 		7C3BDF042013E0D300AC8CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */; };
 		7C3BDF062013E0D300AC8CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF052013E0D300AC8CDB /* ViewController.swift */; };
 		7C3BDF092013E0D300AC8CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3BDF072013E0D300AC8CDB /* Main.storyboard */; };
@@ -47,6 +50,9 @@
 		6DB55117375DDBC818BD2415 /* Pods-FitMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitMate/Pods-FitMate.debug.xcconfig"; sourceTree = "<group>"; };
 		773EC027DE86B7B329FED420 /* Pods_FitMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C17F6912014DDF100C17BA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C17F6932014E71900C17BA5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7C17F6962014E82A00C17BA5 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		7C17F6982014E83800C17BA5 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		7C3BDF002013E0D300AC8CDB /* FitMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C3BDF052013E0D300AC8CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C17F6952014E7F700C17BA5 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7C17F6982014E83800C17BA5 /* CustomMessageCell.swift */,
+				7C17F6962014E82A00C17BA5 /* MessageCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		7C3BDEF72013E0D300AC8CDB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +114,7 @@
 			children = (
 				7C3BDF172014196800AC8CDB /* Model */,
 				7C3BDF182014197200AC8CDB /* View */,
+				7C17F6952014E7F700C17BA5 /* Custom Cell */,
 				7C3BDF192014197600AC8CDB /* Controller */,
 				7C3BDF0A2013E0D300AC8CDB /* Assets.xcassets */,
 				7C3BDF1B201419F200AC8CDB /* Supporting Files */,
@@ -110,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				2A87B8DE201477B6009A3023 /* userData.swift */,
+				7C17F6932014E71900C17BA5 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C17F6972014E82A00C17BA5 /* MessageCell.xib in Resources */,
 				7C3BDF0E2013E0D300AC8CDB /* LaunchScreen.storyboard in Resources */,
 				7C17F6922014DDF200C17BA5 /* GoogleService-Info.plist in Resources */,
 				7C3BDF0B2013E0D300AC8CDB /* Assets.xcassets in Resources */,
@@ -309,8 +327,10 @@
 				2A87B8F120147C4D009A3023 /* ViewControllerHome.swift in Sources */,
 				2A87B8EF20147BC9009A3023 /* ViewControllerPhoto.swift in Sources */,
 				2A87B8EB20147BA2009A3023 /* ViewControllerQ3.swift in Sources */,
+				7C17F6992014E83800C17BA5 /* CustomMessageCell.swift in Sources */,
 				7C3BDF042013E0D300AC8CDB /* AppDelegate.swift in Sources */,
 				2A87B8F520147C61009A3023 /* ViewControllerProfile.swift in Sources */,
+				7C17F6942014E71900C17BA5 /* Message.swift in Sources */,
 				2A87B8E720147B8F009A3023 /* ViewControllerQ1.swift in Sources */,
 				2A87B8F720149DE8009A3023 /* ViewControllerTransition.swift in Sources */,
 			);
