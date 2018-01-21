@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="226" y="-479"/>
         </scene>
-        <!--HomeUI-->
+        <!--View Controller Login-->
         <scene sceneID="7g6-T3-O2K">
             <objects>
-                <viewController id="G0u-uZ-ns7" customClass="HomeUI" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G0u-uZ-ns7" customClass="ViewControllerLogin" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UoO-Jn-DgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +161,7 @@
         <!--Message-->
         <scene sceneID="1hh-2j-9c7">
             <objects>
-                <viewController id="enk-VO-pZG" customClass="HomeUI" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="enk-VO-pZG" customClass="ViewControllerMessage" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9To-Jd-XT5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +206,7 @@
         <!--My Profile-->
         <scene sceneID="aJ8-JC-rns">
             <objects>
-                <viewController id="aaF-Fx-61y" sceneMemberID="viewController">
+                <viewController id="aaF-Fx-61y" customClass="ViewControllerProfile" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Gb-hG-1FU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +244,7 @@
         <!--Home-->
         <scene sceneID="5wP-HG-kCg">
             <objects>
-                <viewController title="Home" id="XF8-Ki-CLW" sceneMemberID="viewController">
+                <viewController title="Home" id="XF8-Ki-CLW" customClass="ViewControllerHome" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rqk-i9-rC7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,10 +321,10 @@
             </objects>
             <point key="canvasLocation" x="3406" y="1515"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Sign Up-->
         <scene sceneID="HDD-Tl-l64">
             <objects>
-                <viewController id="8vo-n8-X6E" sceneMemberID="viewController">
+                <viewController id="8vo-n8-X6E" customClass="ViewControllerSignUp" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZDu-gJ-JAK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,10 +451,10 @@
             </objects>
             <point key="canvasLocation" x="1997.5999999999999" y="-469.1154422788606"/>
         </scene>
-        <!--View Controller-->
+        <!--View ControllerQ1-->
         <scene sceneID="B6z-1q-8sG">
             <objects>
-                <viewController id="7WO-hb-Nub" sceneMemberID="viewController">
+                <viewController id="7WO-hb-Nub" customClass="ViewControllerQ1" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zOO-ZR-1z5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -491,10 +491,10 @@
             </objects>
             <point key="canvasLocation" x="2800.8000000000002" y="-464.6176911544228"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Photo-->
         <scene sceneID="jXZ-5B-mht">
             <objects>
-                <viewController id="v5z-Xo-wpU" sceneMemberID="viewController">
+                <viewController id="v5z-Xo-wpU" customClass="ViewControllerPhoto" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bxp-YD-1wL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,6 +557,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="89W-z5-LA3"/>
-        <segue reference="6t8-ND-5wl"/>
+        <segue reference="YEb-sH-JmI"/>
     </inferredMetricsTieBreakers>
 </document>
