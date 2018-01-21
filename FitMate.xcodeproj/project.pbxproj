@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33D32441377DB7C4C34E98CB /* Pods_FitMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773EC027DE86B7B329FED420 /* Pods_FitMate.framework */; };
 		7C3BDF042013E0D300AC8CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */; };
 		7C3BDF062013E0D300AC8CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF052013E0D300AC8CDB /* ViewController.swift */; };
 		7C3BDF092013E0D300AC8CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3BDF072013E0D300AC8CDB /* Main.storyboard */; };
 		7C3BDF0B2013E0D300AC8CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3BDF0A2013E0D300AC8CDB /* Assets.xcassets */; };
 		7C3BDF0E2013E0D300AC8CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3BDF0C2013E0D300AC8CDB /* LaunchScreen.storyboard */; };
+		7C3BDF162014163B00AC8CDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C3BDF152014163B00AC8CDB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		660553E7A16F730C6A483CF8 /* Pods-FitMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitMate/Pods-FitMate.release.xcconfig"; sourceTree = "<group>"; };
+		6DB55117375DDBC818BD2415 /* Pods-FitMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitMate/Pods-FitMate.debug.xcconfig"; sourceTree = "<group>"; };
+		773EC027DE86B7B329FED420 /* Pods_FitMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3BDF002013E0D300AC8CDB /* FitMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C3BDF052013E0D300AC8CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		7C3BDF0A2013E0D300AC8CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C3BDF0D2013E0D300AC8CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C3BDF0F2013E0D300AC8CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C3BDF152014163B00AC8CDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D32441377DB7C4C34E98CB /* Pods_FitMate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02EC85ECE82EDDD302E45099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				773EC027DE86B7B329FED420 /* Pods_FitMate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C3BDEF72013E0D300AC8CDB = {
 			isa = PBXGroup;
 			children = (
 				7C3BDF022013E0D300AC8CDB /* FitMate */,
 				7C3BDF012013E0D300AC8CDB /* Products */,
+				A30B00A4208C0B4186425BD5 /* Pods */,
+				02EC85ECE82EDDD302E45099 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,56 @@
 		7C3BDF022013E0D300AC8CDB /* FitMate */ = {
 			isa = PBXGroup;
 			children = (
-				7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */,
-				7C3BDF052013E0D300AC8CDB /* ViewController.swift */,
-				7C3BDF072013E0D300AC8CDB /* Main.storyboard */,
+				7C3BDF172014196800AC8CDB /* Model */,
+				7C3BDF182014197200AC8CDB /* View */,
+				7C3BDF192014197600AC8CDB /* Controller */,
 				7C3BDF0A2013E0D300AC8CDB /* Assets.xcassets */,
-				7C3BDF0C2013E0D300AC8CDB /* LaunchScreen.storyboard */,
-				7C3BDF0F2013E0D300AC8CDB /* Info.plist */,
+				7C3BDF1B201419F200AC8CDB /* Supporting Files */,
 			);
 			path = FitMate;
+			sourceTree = "<group>";
+		};
+		7C3BDF172014196800AC8CDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C3BDF182014197200AC8CDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C3BDF072013E0D300AC8CDB /* Main.storyboard */,
+				7C3BDF0C2013E0D300AC8CDB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C3BDF192014197600AC8CDB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C3BDF052013E0D300AC8CDB /* ViewController.swift */,
+				7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7C3BDF1B201419F200AC8CDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C3BDF0F2013E0D300AC8CDB /* Info.plist */,
+				7C3BDF152014163B00AC8CDB /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A30B00A4208C0B4186425BD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DB55117375DDBC818BD2415 /* Pods-FitMate.debug.xcconfig */,
+				660553E7A16F730C6A483CF8 /* Pods-FitMate.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C3BDF122013E0D300AC8CDB /* Build configuration list for PBXNativeTarget "FitMate" */;
 			buildPhases = (
+				A1D0BE9D766166EE024D697A /* [CP] Check Pods Manifest.lock */,
 				7C3BDEFC2013E0D300AC8CDB /* Sources */,
 				7C3BDEFD2013E0D300AC8CDB /* Frameworks */,
 				7C3BDEFE2013E0D300AC8CDB /* Resources */,
+				E4E0A401D4AB8F04323CA590 /* [CP] Embed Pods Frameworks */,
+				4231D7C8AE964D25652994E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +186,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3BDF0E2013E0D300AC8CDB /* LaunchScreen.storyboard in Resources */,
+				7C3BDF162014163B00AC8CDB /* GoogleService-Info.plist in Resources */,
 				7C3BDF0B2013E0D300AC8CDB /* Assets.xcassets in Resources */,
 				7C3BDF092013E0D300AC8CDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4231D7C8AE964D25652994E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitMate/Pods-FitMate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D0BE9D766166EE024D697A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitMate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4E0A401D4AB8F04323CA590 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FitMate/Pods-FitMate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitMate/Pods-FitMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C3BDEFC2013E0D300AC8CDB /* Sources */ = {
@@ -272,6 +395,7 @@
 		};
 		7C3BDF132013E0D300AC8CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB55117375DDBC818BD2415 /* Pods-FitMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +411,7 @@
 		};
 		7C3BDF142013E0D300AC8CDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 660553E7A16F730C6A483CF8 /* Pods-FitMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
