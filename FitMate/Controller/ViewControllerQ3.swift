@@ -10,6 +10,56 @@ import UIKit
 
 class ViewControllerQ3: UIViewController,UITextFieldDelegate {
     
+    @IBOutlet weak var Morning: UIButton!
+    @IBOutlet weak var Afternoon: UIButton!
+    @IBOutlet weak var Evening: UIButton!
+    @IBOutlet weak var Night: UIButton!
+    
+    @IBAction func MorningAction(_ sender: UIButton) {
+        if Morning.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
+            Morning.backgroundColor = UIColor.green
+            // add to array
+        }
+        else{
+            Morning.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
+            // remove from array
+        }
+        
+    }
+    
+    @IBAction func AfternoonAction(_ sender: UIButton) {
+        if Afternoon.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
+            Afternoon.backgroundColor = UIColor.green
+            // add to array
+        }
+        else{
+            Afternoon.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
+            // remove from array
+        }
+    }
+    
+    @IBAction func EveningAction(_ sender: UIButton) {
+        if Evening.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
+            Evening.backgroundColor = UIColor.green
+            // add to array
+        }
+        else{
+            Evening.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
+            // remove from array
+        }
+    }
+    
+    @IBAction func NightAction(_ sender: UIButton) {
+        if Night.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
+            Night.backgroundColor = UIColor.green
+            // add to array
+        }
+        else{
+            Night.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
+            // remove from array
+        }
+    }
+    
     var newUser = userData()
     
     @IBOutlet weak var timeOfDay: UITextField!

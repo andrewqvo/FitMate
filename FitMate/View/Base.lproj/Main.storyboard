@@ -579,6 +579,7 @@
                                 </state>
                                 <connections>
                                     <action selector="completeProfileButtonPressed:" destination="v5z-Xo-wpU" eventType="touchUpInside" id="a6A-gc-gf2"/>
+                                    <segue destination="KqM-eo-L4j" kind="push" id="t5n-S3-TM5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geV-KV-Bo1">
@@ -595,9 +596,6 @@
                         <viewLayoutGuide key="safeArea" id="tfq-qT-pIS"/>
                     </view>
                     <navigationItem key="navigationItem" id="jq7-pQ-97u"/>
-                    <connections>
-                        <segue destination="KqM-eo-L4j" kind="show" identifier="goToMainFromPhoto" id="z03-uL-PM2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs5-tu-oEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -802,18 +800,70 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdt-u0-IlU">
+                                <rect key="frame" x="39" y="242" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Morning">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="MorningAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="mV3-N3-22W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ue-1Z-T51">
+                                <rect key="frame" x="209" y="241" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Evening">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EveningAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="Jg5-gb-GEt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dq-pS-2nX">
+                                <rect key="frame" x="39" y="304" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Afternoon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="AfternoonAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="H5M-Ha-h7v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5p-QV-4Tw">
+                                <rect key="frame" x="209" y="304" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Night">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NightAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="6YC-qB-nKS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ibf-wx-rh0"/>
                     </view>
                     <navigationItem key="navigationItem" id="ko4-yj-XRZ"/>
                     <connections>
+                        <outlet property="Afternoon" destination="1Dq-pS-2nX" id="bEB-zy-Eey"/>
+                        <outlet property="Evening" destination="5Ue-1Z-T51" id="n2P-eg-Ztc"/>
+                        <outlet property="Morning" destination="Bdt-u0-IlU" id="m6n-tM-jTo"/>
+                        <outlet property="Night" destination="J5p-QV-4Tw" id="h6t-0G-6sZ"/>
                         <outlet property="timeOfDay" destination="3Dd-vm-qgw" id="7ds-Jl-tjO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKk-AA-tk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4415" y="-469"/>
+            <point key="canvasLocation" x="4413.6000000000004" y="-469.1154422788606"/>
         </scene>
         <!--View ControllerQ4-->
         <scene sceneID="Kis-t1-GZb">
@@ -995,6 +1045,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="89W-z5-LA3"/>
-        <segue reference="z03-uL-PM2"/>
+        <segue reference="t5n-S3-TM5"/>
     </inferredMetricsTieBreakers>
 </document>
