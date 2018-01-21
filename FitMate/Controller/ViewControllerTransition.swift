@@ -1,14 +1,14 @@
 //
-//  ViewControllerQ1.swift
+//  ViewControllerTransition.swift
 //  FitMate
 //
-//  Created by John Fu on 1/20/18.
+//  Created by John Fu on 1/21/18.
 //  Copyright © 2018 Team Alabama. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerQ1: UIViewController {
+class ViewControllerTransition: UIViewController {
     
     var newUser  = userData()
 
@@ -17,6 +17,7 @@ class ViewControllerQ1: UIViewController {
 
         // Do any additional setup after loading the view.
         newUser.printAll()
+        newUser.printUserName()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +25,10 @@ class ViewControllerQ1: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let ViewControllerQ1 = segue.destination as? ViewControllerQ1 {
+            ViewControllerQ1.newUser = self.newUser
+        }
 
     /*
     // MARK: - Navigation
@@ -34,5 +39,5 @@ class ViewControllerQ1: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    }
 }

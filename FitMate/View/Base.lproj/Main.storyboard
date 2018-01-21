@@ -68,6 +68,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="signUpView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgy-hj-5Kp"/>
                                     <segue destination="8vo-n8-X6E" kind="push" id="89W-z5-LA3"/>
                                 </connections>
                             </button>
@@ -387,6 +388,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextScreen:" destination="8vo-n8-X6E" eventType="touchUpInside" id="Quv-cw-wL7"/>
                                     <segue destination="imf-Qy-0HW" kind="push" id="yen-ZD-sBx"/>
                                 </connections>
                             </button>
@@ -402,15 +404,24 @@
                         <viewLayoutGuide key="safeArea" id="pXB-F6-dFu"/>
                     </view>
                     <navigationItem key="navigationItem" id="27H-Lz-a7d"/>
+                    <connections>
+                        <outlet property="dateOfBirth" destination="WJY-5l-ID5" id="JI1-fH-6Xs"/>
+                        <outlet property="emailText" destination="RDa-cf-2a6" id="6t1-vb-12q"/>
+                        <outlet property="firstNameText" destination="So9-AE-090" id="96h-db-Dfi"/>
+                        <outlet property="genderText" destination="o0Y-uF-Ddo" id="nEq-hB-l4j"/>
+                        <outlet property="lastNameText" destination="32o-uz-PgR" id="Zcd-2G-5zn"/>
+                        <outlet property="passwordText" destination="b1U-3q-rhr" id="0hP-jx-l4V"/>
+                        <outlet property="phoneNumber" destination="Jgb-CK-xwg" id="bDF-2w-oLX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ka-XV-D8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136.8" y="-479.01049475262374"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Transition-->
         <scene sceneID="I8X-1O-60Z">
             <objects>
-                <viewController id="imf-Qy-0HW" sceneMemberID="viewController">
+                <viewController id="imf-Qy-0HW" customClass="ViewControllerTransition" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CIv-c5-gtH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,6 +568,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="89W-z5-LA3"/>
-        <segue reference="YEb-sH-JmI"/>
+        <segue reference="6t8-ND-5wl"/>
     </inferredMetricsTieBreakers>
 </document>
