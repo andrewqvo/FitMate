@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewControllerPhoto: UIViewController {
+    
+    var newUser = userData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("photoscreen")
+        newUser.printAll()
         // Do any additional setup after loading the view.
     }
 

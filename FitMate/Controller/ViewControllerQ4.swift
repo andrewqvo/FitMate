@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewControllerQ4: UIViewController {
+class ViewControllerQ4: UIViewController, UITextFieldDelegate {
+    
+    var newUser = userData()
 
+    @IBOutlet weak var favoriteExcercise: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        newUser.printAll()
+        
+        favoriteExcercise.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +28,22 @@ class ViewControllerQ4: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    @IBAction func nextScreen(_ sender: Any) {
+        newUser.setExcercise(answer: favoriteExcercise.text!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let ViewControllerQ5 = segue.destination as? ViewControllerQ5 {
+            ViewControllerQ5.newUser = self.newUser
+        }
+    }
 
     /*
     // MARK: - Navigation

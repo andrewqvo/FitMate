@@ -26,9 +26,10 @@ class userData{
     
     
     var description = ""
-    var weight = ""
+    var weight = 0
     var favoriteExcercise = ""
-    var availability = ""
+    var daysAvailable = ""
+    var timeAvailable = ""
     
     
     init(){
@@ -67,11 +68,14 @@ class userData{
         userBirthday = date
     }
     
-    func setWeight(answer : String){
+    func setWeight(answer : Int){
          weight = answer
     }
-    func setAvailability(answer : String){
-        availability = answer
+    func setDaysAvailable(answer : String){
+        daysAvailable = answer
+    }
+    func setTimeAvailable(answer : String){
+        timeAvailable = answer
     }
     func setExcercise(answer : String){
         favoriteExcercise = answer
@@ -91,13 +95,17 @@ class userData{
     }
     func printAll()
     {
-        print(userName,userEmail,userPassword,userGender)
+        print("username: ", userName)
+        print("useremail: ", userEmail)
+        print("user password: ",userPassword)
+        print("user Gender: ", userGender)
        //print(userBirthday.day,userBirthday.month,userBirthday.year)
-        print(userBirthday)
-        print(userNumber)
-        print(weight)
-        print(description)
-        print(favoriteExcercise)
-        print(availability)
+        print("user birthday: ", userBirthday)
+        print("user phone Number: ", userNumber)
+        print("user weight: ", weight)
+        print("user description: ",  description)
+        print("user favorite excercise: ", favoriteExcercise)
+        print("days user is available: ", daysAvailable)
+        print("time user is avaliable: " ,timeAvailable)
 }
 }

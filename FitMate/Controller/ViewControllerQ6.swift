@@ -1,23 +1,24 @@
 //
-//  ViewControllerQ3.swift
+//  ViewControllerQ6.swift
 //  FitMate
 //
-//  Created by John Fu on 1/20/18.
+//  Created by John Fu on 1/21/18.
 //  Copyright © 2018 Team Alabama. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerQ3: UIViewController,UITextFieldDelegate {
+class ViewControllerQ6: UIViewController,     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let ViewControllerC = segue.destination as? ViewControllerC {
+        ViewControllerC.newUser = self.newUser
+    }
+} {
     
     var newUser = userData()
     
-    @IBOutlet weak var timeOfDay: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        newUser.printAll()
-        timeOfDay.delegate = self
+
         // Do any additional setup after loading the view.
     }
 
@@ -26,23 +27,7 @@ class ViewControllerQ3: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // Hide the keyboard.
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    
-    @IBAction func nextScreen(_ sender: UIButton) {
-        newUser.setTimeAvailable(answer: timeOfDay.text!)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let ViewControllerQ4 = segue.destination as? ViewControllerQ4 {
-            ViewControllerQ4.newUser = self.newUser
-        }
-    }
-    
+
     /*
     // MARK: - Navigation
 
