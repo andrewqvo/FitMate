@@ -52,7 +52,7 @@ class ViewControllerPhoto: UIViewController {
         guard let myUserID = Auth.auth().currentUser?.uid else {return}
         let usersInfo = usersDB.child(myUserID)
         
-        let usersMessage = ["UserName" : newUser.userName, "Email" : newUser.userEmail, "Gender" : newUser.userGender, "Number" : String(newUser.userNumber), "Birthday" : newUser.userBirthday, "Description" : newUser.description, "Weight" : String(newUser.weight), "FavoriteExercise" : newUser.favoriteExcercise, "DaysAvail" : newUser.daysAvailable, "TimeAvail" : newUser.timeAvailable]
+        let usersMessage = ["UserName" : newUser.userName, "Email" : newUser.userEmail, "Gender" : newUser.userGender, "Number" : String(newUser.userNumber), "Birthday" : newUser.userBirthday, "Description" : newUser.description, "Weight" : String(newUser.weight), "FavoriteExercise" : newUser.favoriteExerciseAsString, "DaysAvail" : newUser.daysAvailable, "TimeAvail" : newUser.timeAvailable]
         
         usersInfo.setValue(usersMessage)
         

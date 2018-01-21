@@ -10,6 +10,8 @@ import UIKit
 
 class ViewControllerQ4: UIViewController, UITextFieldDelegate {
     
+    var newUser = userData()
+    
     @IBOutlet weak var Running: UIButton!
     @IBOutlet weak var WeightLifting: UIButton!
     @IBOutlet weak var Dancing: UIButton!
@@ -22,10 +24,12 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         if Running.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Running.backgroundColor = UIColor.green
             // add to array
+            newUser.setExcercise(answer: "Running")
         }
         else{
             Running.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeFromExcercise(answer: "Running")
         }
     }
     
@@ -33,10 +37,12 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         if WeightLifting.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
         WeightLifting.backgroundColor = UIColor.green
         // add to array
+        newUser.setExcercise(answer: "Weight Lifting")
     }
         else{
             WeightLifting.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeFromExcercise(answer: "Weight Lifting")
         }
     }
     
@@ -44,10 +50,12 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         if Dancing.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Dancing.backgroundColor = UIColor.green
             // add to array
+            newUser.setExcercise(answer: "Dancing")
         }
         else{
             Dancing.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeFromExcercise(answer: "Dancing")
         }
     }
     
@@ -55,10 +63,12 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         if Yoga.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Yoga.backgroundColor = UIColor.green
             // add to array
+            newUser.setExcercise(answer: "Yoga")
         }
         else{
             Yoga.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeFromExcercise(answer: "Yoga")
         }
     }
     
@@ -66,10 +76,12 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         if Swimming.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Swimming.backgroundColor = UIColor.green
             // add to array
+            newUser.setExcercise(answer: "Swimming")
         }
         else{
             Swimming.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeFromExcercise(answer: "Swimming")
         }
     }
     
@@ -77,16 +89,17 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         if Cycling.backgroundColor == UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1){
             Cycling.backgroundColor = UIColor.green
             // add to array
+            newUser.setExcercise(answer: "Cycling")
         }
         else{
             Cycling.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 1)
             // remove from array
+            newUser.removeFromExcercise(answer: "Cycling")
         }
     }
     
-    var newUser = userData()
+    
 
-    @IBOutlet weak var favoriteExcercise: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,7 +108,6 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         
         newUser.printAll()
         
-        favoriteExcercise.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -104,15 +116,13 @@ class ViewControllerQ4: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // Hide the keyboard.
-        textField.resignFirstResponder()
-        return true
-    }
+
     
     
     @IBAction func nextScreen(_ sender: Any) {
-        newUser.setExcercise(answer: favoriteExcercise.text!)
+       // newUser.setExcercise(answer: favoriteExcercise.text!)
+        newUser.printExcercise()
+        newUser.convertExcercise()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

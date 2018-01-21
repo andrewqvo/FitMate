@@ -27,10 +27,11 @@ class userData{
     
     var description = ""
     var weight = 0
-    var favoriteExcercise = ""
+    var favoriteExcercise = Set<String>()
     var daysAvailable = ""
     var timeAvailable = ""
     
+    var favoriteExerciseAsString = ""
     
     init(){
         
@@ -78,11 +79,24 @@ class userData{
         timeAvailable = answer
     }
     func setExcercise(answer : String){
-        favoriteExcercise = answer
+        favoriteExcercise.insert(answer)
     }
+    func removeFromExcercise(answer: String){
+        if(favoriteExcercise.contains(answer)){
+            favoriteExcercise.remove(answer)
+        }
+    }
+    
     func setDescription(answer: String)
     {
         description = answer
+    }
+    
+    func convertExcercise()
+    {
+        for i in favoriteExcercise{
+            favoriteExerciseAsString += i + " "
+        }
     }
     
     func printUserName()
@@ -93,6 +107,15 @@ class userData{
     {
         print(userEmail)
     }
+    
+    func printExcercise()
+    {
+        for i in favoriteExcercise{
+            print("user favorite excercise: ", i)
+        }
+    }
+    
+    
     func printAll()
     {
         print("username: ", userName)
@@ -104,7 +127,11 @@ class userData{
         print("user phone Number: ", userNumber)
         print("user weight: ", weight)
         print("user description: ",  description)
-        print("user favorite excercise: ", favoriteExcercise)
+        for i in favoriteExcercise{
+            print("user favorite excercise: ", i)
+        }
+        
+        
         print("days user is available: ", daysAvailable)
         print("time user is avaliable: " ,timeAvailable)
 }
