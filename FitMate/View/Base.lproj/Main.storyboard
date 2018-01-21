@@ -269,13 +269,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQM-qA-4Jd">
-                                <rect key="frame" x="108" y="442" width="67" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FitMate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9g-jh-UuD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -284,8 +277,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JG0-q9-C7n">
-                                <rect key="frame" x="16" y="109" width="125" height="112"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileimage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cq3-8E-wv0">
+                                <rect key="frame" x="0.0" y="57" width="375" height="561"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -297,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OzV-98-VAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4617" y="2633"/>
+            <point key="canvasLocation" x="4616.8000000000002" y="2632.5337331334335"/>
         </scene>
         <!--Home-->
         <scene sceneID="5wP-HG-kCg">
@@ -307,10 +300,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSi-he-ojG">
-                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FitMate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEQ-rk-juo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -327,6 +316,14 @@
                                     <outlet property="delegate" destination="XF8-Ki-CLW" id="DTV-dG-gba"/>
                                 </connections>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9F-lQ-zzF">
+                                <rect key="frame" x="0.0" y="120" width="375" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="HomePage.jpg"/>
+                                <connections>
+                                    <segue destination="enk-VO-pZG" kind="show" id="miu-ON-Ag6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UiQ-Dn-FSN"/>
@@ -608,13 +605,10 @@
                         <viewLayoutGuide key="safeArea" id="tfq-qT-pIS"/>
                     </view>
                     <navigationItem key="navigationItem" id="jq7-pQ-97u"/>
-<<<<<<< HEAD
                     <connections>
                         <outlet property="myImg" destination="Ni7-hc-cEM" id="F3B-Qd-sLV"/>
                         <segue destination="KqM-eo-L4j" kind="show" identifier="goToMainFromPhoto" id="z03-uL-PM2"/>
                     </connections>
-=======
->>>>>>> a6f7ce8d3e7cf4372e7a30186651dd743276e93c
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs5-tu-oEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1036,10 +1030,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HomePage.jpg" width="1448" height="464"/>
         <image name="iTunesArtwork" width="512" height="512"/>
+        <image name="profileimage.jpg" width="983" height="1349"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="89W-z5-LA3"/>
         <segue reference="t5n-S3-TM5"/>
+        <segue reference="miu-ON-Ag6"/>
     </inferredMetricsTieBreakers>
 </document>

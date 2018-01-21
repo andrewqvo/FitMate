@@ -26,6 +26,8 @@
 		7C17F6942014E71900C17BA5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17F6932014E71900C17BA5 /* Message.swift */; };
 		7C17F6972014E82A00C17BA5 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C17F6962014E82A00C17BA5 /* MessageCell.xib */; };
 		7C17F6992014E83800C17BA5 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17F6982014E83800C17BA5 /* CustomMessageCell.swift */; };
+		7C17F69C2015203800C17BA5 /* profileimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C17F69A2015203800C17BA5 /* profileimage.jpg */; };
+		7C17F69D2015203800C17BA5 /* HomePage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C17F69B2015203800C17BA5 /* HomePage.jpg */; };
 		7C3BDF042013E0D300AC8CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */; };
 		7C3BDF062013E0D300AC8CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF052013E0D300AC8CDB /* ViewController.swift */; };
 		7C3BDF092013E0D300AC8CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3BDF072013E0D300AC8CDB /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 		7C17F6932014E71900C17BA5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7C17F6962014E82A00C17BA5 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		7C17F6982014E83800C17BA5 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		7C17F69A2015203800C17BA5 /* profileimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profileimage.jpg; sourceTree = "<group>"; };
+		7C17F69B2015203800C17BA5 /* HomePage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomePage.jpg; sourceTree = "<group>"; };
 		7C3BDF002013E0D300AC8CDB /* FitMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C3BDF052013E0D300AC8CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				7C17F6952014E7F700C17BA5 /* Custom Cell */,
 				7C3BDF192014197600AC8CDB /* Controller */,
 				7C3BDF0A2013E0D300AC8CDB /* Assets.xcassets */,
+				7C17F69B2015203800C17BA5 /* HomePage.jpg */,
+				7C17F69A2015203800C17BA5 /* profileimage.jpg */,
 				7C3BDF1B201419F200AC8CDB /* Supporting Files */,
 			);
 			path = FitMate;
@@ -246,10 +252,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C17F6972014E82A00C17BA5 /* MessageCell.xib in Resources */,
+				7C17F69D2015203800C17BA5 /* HomePage.jpg in Resources */,
 				7C3BDF0E2013E0D300AC8CDB /* LaunchScreen.storyboard in Resources */,
 				7C17F6922014DDF200C17BA5 /* GoogleService-Info.plist in Resources */,
 				7C3BDF0B2013E0D300AC8CDB /* Assets.xcassets in Resources */,
 				7C3BDF092013E0D300AC8CDB /* Main.storyboard in Resources */,
+				7C17F69C2015203800C17BA5 /* profileimage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
