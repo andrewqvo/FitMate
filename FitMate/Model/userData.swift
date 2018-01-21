@@ -27,10 +27,13 @@ class userData{
     
     var description = ""
     var weight = 0
-    var favoriteExcercise = ""
-    var daysAvailable = ""
-    var timeAvailable = ""
+    var favoriteExcercise = Set<String>()
+    var daysAvailable = Set<String>()
+    var timeAvailable = Set<String>()
     
+    var favoriteExerciseAsString = ""
+    var daysAvailableAsString = ""
+    var timeAvailableAsString = ""
     
     init(){
         
@@ -72,17 +75,58 @@ class userData{
          weight = answer
     }
     func setDaysAvailable(answer : String){
-        daysAvailable = answer
+        daysAvailable.insert(answer)
+    }
+    func removeFromDays(answer: String){
+        if(daysAvailable.contains(answer))
+        {
+            daysAvailable.remove(answer)
+        }
+    }
+    
+    func combineDays()
+    {
+        for i in daysAvailable{
+            daysAvailableAsString += i + ""
+        }
     }
     func setTimeAvailable(answer : String){
-        timeAvailable = answer
+        timeAvailable.insert(answer)
+    }
+    
+    func removeTimeAvailable(answer: String)
+    {
+        if(timeAvailable.contains(answer))
+        {
+            timeAvailable.remove(answer)
+        }
+    }
+    
+    func combineTimeAvailable(){
+        for i in timeAvailable{
+            timeAvailableAsString += i + " "
+        }
+        
     }
     func setExcercise(answer : String){
-        favoriteExcercise = answer
+        favoriteExcercise.insert(answer)
     }
+    func removeFromExcercise(answer: String){
+        if(favoriteExcercise.contains(answer)){
+            favoriteExcercise.remove(answer)
+        }
+    }
+    
     func setDescription(answer: String)
     {
         description = answer
+    }
+    
+    func convertExcercise()
+    {
+        for i in favoriteExcercise{
+            favoriteExerciseAsString += i + " "
+        }
     }
     
     func printUserName()
@@ -93,6 +137,27 @@ class userData{
     {
         print(userEmail)
     }
+    
+    func printExcercise()
+    {
+        for i in favoriteExcercise{
+            print("user favorite excercise: ", i)
+        }
+    }
+    func printDays()
+    {
+        for i in daysAvailable{
+            print("users days: ", i)
+        }
+    }
+    func printTimes()
+    {
+        for i in timeAvailable{
+            print("users times: ", i)
+        }
+    }
+    
+    
     func printAll()
     {
         print("username: ", userName)
@@ -104,8 +169,17 @@ class userData{
         print("user phone Number: ", userNumber)
         print("user weight: ", weight)
         print("user description: ",  description)
-        print("user favorite excercise: ", favoriteExcercise)
-        print("days user is available: ", daysAvailable)
-        print("time user is avaliable: " ,timeAvailable)
+        for i in favoriteExcercise{
+            print("user favorite excercise: ", i)
+        }
+        
+        
+        for i in daysAvailable{
+            print("user days available: ", i)
+        }
+        
+        for i in timeAvailable{
+            print("user time available: ", i)
+        }
 }
 }

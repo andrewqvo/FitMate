@@ -181,7 +181,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FitMate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbb-vv-S2q">
-                                <rect key="frame" x="0.0" y="27.5" width="375" height="36.5"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
@@ -572,6 +572,7 @@
                                 </state>
                                 <connections>
                                     <action selector="completeProfileButtonPressed:" destination="v5z-Xo-wpU" eventType="touchUpInside" id="a6A-gc-gf2"/>
+                                    <segue destination="KqM-eo-L4j" kind="push" id="t5n-S3-TM5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjS-xt-qTR">
@@ -607,10 +608,13 @@
                         <viewLayoutGuide key="safeArea" id="tfq-qT-pIS"/>
                     </view>
                     <navigationItem key="navigationItem" id="jq7-pQ-97u"/>
+<<<<<<< HEAD
                     <connections>
                         <outlet property="myImg" destination="Ni7-hc-cEM" id="F3B-Qd-sLV"/>
                         <segue destination="KqM-eo-L4j" kind="show" identifier="goToMainFromPhoto" id="z03-uL-PM2"/>
                     </connections>
+=======
+>>>>>>> a6f7ce8d3e7cf4372e7a30186651dd743276e93c
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs5-tu-oEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -662,20 +666,110 @@
                                     <segue destination="ywH-97-XNi" kind="push" id="8mR-CP-AaJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-n8-eT9">
-                                <rect key="frame" x="39" y="176" width="320" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcL-X9-fsc">
+                                <rect key="frame" x="201" y="236" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Thursday">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ThursdayAction:" destination="jSS-4L-uaS" eventType="touchUpInside" id="doO-lU-FeI"/>
+                                    <action selector="WeightLiftingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="Oty-1H-uzD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veS-Pu-ZVT">
+                                <rect key="frame" x="27" y="290" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Monday">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DancingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="0kO-nX-trX"/>
+                                    <action selector="MondayAction:" destination="jSS-4L-uaS" eventType="touchUpInside" id="ime-9P-BhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKy-pu-O1G">
+                                <rect key="frame" x="201" y="290" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Friday">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="FridayAction:" destination="jSS-4L-uaS" eventType="touchUpInside" id="e7I-cf-DyK"/>
+                                    <action selector="YogaAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="uIn-sY-oWo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-8P-Rcu">
+                                <rect key="frame" x="27" y="347" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Tuesday">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SwimmingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="DmE-N2-rD6"/>
+                                    <action selector="Tuesday:" destination="jSS-4L-uaS" eventType="touchUpInside" id="xTT-N3-Pe9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZY-98-VEf">
+                                <rect key="frame" x="27" y="236" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Sunday">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RunningAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="MwU-1f-xNa"/>
+                                    <action selector="SundayAction:" destination="jSS-4L-uaS" eventType="touchUpInside" id="bHx-2e-Cuq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRa-lq-CTC">
+                                <rect key="frame" x="201" y="347" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Saturday">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CyclingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="cfk-ox-8QI"/>
+                                    <action selector="SaturdayAction:" destination="jSS-4L-uaS" eventType="touchUpInside" id="Rsz-5b-AtF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8b-yF-Kwm">
+                                <rect key="frame" x="27" y="410" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Wednesday">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CyclingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="gb0-kN-oM4"/>
+                                    <action selector="WednesdayAction:" destination="jSS-4L-uaS" eventType="touchUpInside" id="0zr-Lq-x6w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HDc-38-geQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="RUN-dW-fG1"/>
                     <connections>
-                        <outlet property="avalibilityInput" destination="GiA-n8-eT9" id="VjC-fF-sat"/>
+                        <outlet property="Friday" destination="IKy-pu-O1G" id="hP4-xZ-WB9"/>
+                        <outlet property="Monday" destination="veS-Pu-ZVT" id="YqU-5r-eHV"/>
+                        <outlet property="Saturday" destination="aRa-lq-CTC" id="icU-tO-WpU"/>
+                        <outlet property="Sunday" destination="mZY-98-VEf" id="ZCi-BB-4tm"/>
+                        <outlet property="Thursday" destination="jcL-X9-fsc" id="KEL-jU-Yyb"/>
+                        <outlet property="Tuesday" destination="KiI-8P-Rcu" id="i3e-Mb-ljZ"/>
+                        <outlet property="Wednesday" destination="d8b-yF-Kwm" id="zd9-xx-pQu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNN-bK-T15" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -710,25 +804,69 @@
                                     <segue destination="XjC-0k-aKb" kind="push" id="M18-rn-Ve3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Dd-vm-qgw">
-                                <rect key="frame" x="39" y="176" width="320" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdt-u0-IlU">
+                                <rect key="frame" x="39" y="242" width="150" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Morning">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="MorningAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="mV3-N3-22W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ue-1Z-T51">
+                                <rect key="frame" x="209" y="241" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Evening">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EveningAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="Jg5-gb-GEt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dq-pS-2nX">
+                                <rect key="frame" x="39" y="304" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Afternoon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="AfternoonAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="H5M-Ha-h7v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5p-QV-4Tw">
+                                <rect key="frame" x="209" y="304" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="Night">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NightAction:" destination="ywH-97-XNi" eventType="touchUpInside" id="6YC-qB-nKS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ibf-wx-rh0"/>
                     </view>
                     <navigationItem key="navigationItem" id="ko4-yj-XRZ"/>
                     <connections>
-                        <outlet property="timeOfDay" destination="3Dd-vm-qgw" id="7ds-Jl-tjO"/>
+                        <outlet property="Afternoon" destination="1Dq-pS-2nX" id="bEB-zy-Eey"/>
+                        <outlet property="Evening" destination="5Ue-1Z-T51" id="n2P-eg-Ztc"/>
+                        <outlet property="Morning" destination="Bdt-u0-IlU" id="m6n-tM-jTo"/>
+                        <outlet property="Night" destination="J5p-QV-4Tw" id="h6t-0G-6sZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKk-AA-tk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4415" y="-469"/>
+            <point key="canvasLocation" x="4413.6000000000004" y="-469.1154422788606"/>
         </scene>
         <!--View ControllerQ4-->
         <scene sceneID="Kis-t1-GZb">
@@ -758,25 +896,95 @@
                                     <segue destination="a1x-0I-N3M" kind="push" id="29V-Xy-sLp"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EPJ-3p-NDg">
-                                <rect key="frame" x="39" y="176" width="320" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa5-AI-58q">
+                                <rect key="frame" x="213" y="245" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Weight Lifting">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WeightLiftingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="xem-6e-1GE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9l-MS-zLj">
+                                <rect key="frame" x="39" y="299" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Dancing">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DancingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="tiv-Fx-jdt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTq-Ul-3hr">
+                                <rect key="frame" x="213" y="299" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Yoga">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="YogaAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="Fjv-7q-4LO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9St-6D-xc5">
+                                <rect key="frame" x="39" y="356" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Swimming">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SwimmingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="GEA-WD-bwx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc6-nb-ljl">
+                                <rect key="frame" x="39" y="245" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Running">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RunningAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="zRQ-tZ-6G7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf4-zi-tji">
+                                <rect key="frame" x="213" y="356" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Cycling">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CyclingAction:" destination="XjC-0k-aKb" eventType="touchUpInside" id="9Zz-5d-2LE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2z3-Zb-OI2"/>
                     </view>
                     <navigationItem key="navigationItem" id="JDP-dm-dpX"/>
                     <connections>
-                        <outlet property="favoriteExcercise" destination="EPJ-3p-NDg" id="O9d-M7-8xR"/>
+                        <outlet property="Cycling" destination="cf4-zi-tji" id="tWZ-Gd-WtL"/>
+                        <outlet property="Dancing" destination="S9l-MS-zLj" id="udp-G4-Gm2"/>
+                        <outlet property="Running" destination="Uc6-nb-ljl" id="JXK-qW-wdz"/>
+                        <outlet property="Swimming" destination="9St-6D-xc5" id="T6F-fJ-HjK"/>
+                        <outlet property="WeightLifting" destination="pa5-AI-58q" id="3W9-bM-DoC"/>
+                        <outlet property="Yoga" destination="CTq-Ul-3hr" id="gTl-PA-7tv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owf-PW-RnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5215" y="-479"/>
+            <point key="canvasLocation" x="5213.6000000000004" y="-479.01049475262374"/>
         </scene>
         <!--View ControllerQ5-->
         <scene sceneID="jcf-JH-eza">
@@ -806,7 +1014,7 @@
                                     <segue destination="v5z-Xo-wpU" kind="push" id="nQc-sN-uAp"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MeT-9Y-cJo">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MeT-9Y-cJo">
                                 <rect key="frame" x="39" y="176" width="320" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -832,6 +1040,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="89W-z5-LA3"/>
-        <segue reference="z03-uL-PM2"/>
+        <segue reference="t5n-S3-TM5"/>
     </inferredMetricsTieBreakers>
 </document>
