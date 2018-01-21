@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33D32441377DB7C4C34E98CB /* Pods_FitMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773EC027DE86B7B329FED420 /* Pods_FitMate.framework */; };
+		5028259620146DB500E8C440 /* HomeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028259520146DB500E8C440 /* HomeUI.swift */; };
 		7C3BDF042013E0D300AC8CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF032013E0D300AC8CDB /* AppDelegate.swift */; };
 		7C3BDF062013E0D300AC8CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BDF052013E0D300AC8CDB /* ViewController.swift */; };
 		7C3BDF092013E0D300AC8CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3BDF072013E0D300AC8CDB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5028259520146DB500E8C440 /* HomeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUI.swift; sourceTree = "<group>"; };
 		660553E7A16F730C6A483CF8 /* Pods-FitMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitMate/Pods-FitMate.release.xcconfig"; sourceTree = "<group>"; };
 		6DB55117375DDBC818BD2415 /* Pods-FitMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitMate/Pods-FitMate.debug.xcconfig"; sourceTree = "<group>"; };
 		773EC027DE86B7B329FED420 /* Pods_FitMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,7 @@
 		7C3BDEF72013E0D300AC8CDB = {
 			isa = PBXGroup;
 			children = (
+				5028259520146DB500E8C440 /* HomeUI.swift */,
 				7C3BDF022013E0D300AC8CDB /* FitMate */,
 				7C3BDF012013E0D300AC8CDB /* Products */,
 				A30B00A4208C0B4186425BD5 /* Pods */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5028259620146DB500E8C440 /* HomeUI.swift in Sources */,
 				7C3BDF062013E0D300AC8CDB /* ViewController.swift in Sources */,
 				7C3BDF042013E0D300AC8CDB /* AppDelegate.swift in Sources */,
 			);
