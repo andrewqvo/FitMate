@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewControllerLogin: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +26,24 @@ class ViewControllerLogin: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+     @IBAction func loginButtonPressed(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            
+            if error != nil {
+                print(error!)
+            } else {
+                print("yay log in successful")
+                
+                self.performSegue(withIdentifier: "goToMain", sender: self)
+            }
+        }
+     }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
     }
-    */
+
 
 }

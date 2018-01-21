@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="226" y="-479"/>
         </scene>
-        <!--HomeUI-->
+        <!--View Controller Login-->
         <scene sceneID="7g6-T3-O2K">
             <objects>
-                <viewController id="G0u-uZ-ns7" customClass="HomeUI" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G0u-uZ-ns7" customClass="ViewControllerLogin" customModule="FitMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UoO-Jn-DgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +114,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KqM-eo-L4j" kind="push" id="sFG-55-slr"/>
+                                    <action selector="loginButtonPressed:" destination="G0u-uZ-ns7" eventType="touchUpInside" id="bvT-8O-Uny"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76B-XC-32K">
@@ -155,6 +155,11 @@
                         <viewLayoutGuide key="safeArea" id="atM-OQ-xmL"/>
                     </view>
                     <navigationItem key="navigationItem" id="5eT-Lf-aPh"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="76B-XC-32K" id="Ale-95-RCi"/>
+                        <outlet property="passwordTextField" destination="4UB-s9-zI4" id="X0t-8J-Jvg"/>
+                        <segue destination="KqM-eo-L4j" kind="show" identifier="goToMain" id="S6q-i4-UJM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZID-kG-NOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -389,7 +394,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextScreen:" destination="8vo-n8-X6E" eventType="touchUpInside" id="Quv-cw-wL7"/>
+                                    <action selector="nextScreen:" destination="8vo-n8-X6E" eventType="touchUpInside" id="Q5w-ak-04z"/>
                                     <segue destination="imf-Qy-0HW" kind="push" id="yen-ZD-sBx"/>
                                 </connections>
                             </button>
@@ -522,7 +527,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KqM-eo-L4j" kind="push" id="dvp-Cw-YmY"/>
+                                    <action selector="completeProfileButtonPressed:" destination="v5z-Xo-wpU" eventType="touchUpInside" id="a6A-gc-gf2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geV-KV-Bo1">
@@ -539,6 +544,9 @@
                         <viewLayoutGuide key="safeArea" id="tfq-qT-pIS"/>
                     </view>
                     <navigationItem key="navigationItem" id="jq7-pQ-97u"/>
+                    <connections>
+                        <segue destination="KqM-eo-L4j" kind="show" identifier="goToMainFromPhoto" id="z03-uL-PM2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs5-tu-oEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -759,7 +767,7 @@
         <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A2p-Lh-5rn"/>
-        <segue reference="sFG-55-slr"/>
+        <segue reference="89W-z5-LA3"/>
+        <segue reference="z03-uL-PM2"/>
     </inferredMetricsTieBreakers>
 </document>

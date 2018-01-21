@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>433074358216-mdjdl764iobt999f23htenaudukdetam.apps.googleusercontent.com</string>
+	<string>805326316762-knqsde8rceq5n50q5d564pstnuvnn5v3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.433074358216-mdjdl764iobt999f23htenaudukdetam</string>
+	<string>com.googleusercontent.apps.805326316762-knqsde8rceq5n50q5d564pstnuvnn5v3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDZHoRnPGytbeojx4EtAv8trWg5ELwKrLM</string>
+	<string>AIzaSyDpP3oHiyUsrtBZ9viccXV_vMKZR1jj-2o</string>
 	<key>GCM_SENDER_ID</key>
-	<string>433074358216</string>
+	<string>805326316762</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.TeamAlabama.FitMate</string>
 	<key>PROJECT_ID</key>
-	<string>flash-chat-856de</string>
+	<string>fitmate-65e53</string>
 	<key>STORAGE_BUCKET</key>
-	<string>flash-chat-856de.appspot.com</string>
+	<string>fitmate-65e53.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:433074358216:ios:8d6b290a1b631285</string>
+	<string>1:805326316762:ios:8d6b290a1b631285</string>
 	<key>DATABASE_URL</key>
-	<string>https://flash-chat-856de.firebaseio.com</string>
+	<string>https://fitmate-65e53.firebaseio.com</string>
 </dict>
 </plist>
